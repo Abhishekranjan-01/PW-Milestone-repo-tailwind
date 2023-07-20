@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav-Bar</title>
+
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- Animate CSS CDN -->
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <!-- Hamburger CDN -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</head>
+<body class="bg-gray-700 ">
+
+    <nav class="bg-gray-500 w-full px-3 md:w-4/5 mx-auto flex justify-between md:static relative ">
+
+        <h1 class="text-3xl">E Guru</h1>
+        <ol class="bg-white hidden md:flex justify-evenly flex-col md:flex-row items-center opacity-0 md:opacity-100 px-3  absolute md:static w-fit md:w-fit top-full right-0 h-screen md:h-auto
+        animate__animated 
+        
+        ">
+            <li class="md:inline px-3 py-3 "><a href="#">Home</a></li>
+            <li class="md:inline px-3 py-3"><a href="#">About Us</a></li>
+            <li class="md:inline px-3 py-3"><a href="#">Features</a></li>
+            <li class="md:inline px-3 py-3 "><a href="#">How It Works</a></li>
+
+            <button class=" w-fit px-3 py-3 block md:hidden">Sign Up</button>
+        </ol>
+        
+        <button class=" bg-white px-3 py-3 hidden md:block">Sign Up</button>
+
+        <ion-icon  class="block md:hidden text-3xl" name="menu" class="text-3xl" onclick="Menu(this);"></ion-icon>
+    </nav>
+
+    <script>
+        function Menu(e){
+            let ol = document.querySelector('nav ol');
+            //let menu = document.querySelector('name');  
+
+           
+            e.name === 'menu' ? (e.name ='close', ol.classList.add('opacity-100'),ol.classList.add('flex'))
+             :
+            (e.name = 'menu' , ol.classList.remove('opacity-100')
+            
+            ) ;
+            //ol.classList.toggle('max-md:hidden');
+            ol.classList.toggle('hidden')
+     }
+        
+    </script>
+</body>
+</html>
