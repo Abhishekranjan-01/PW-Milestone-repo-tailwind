@@ -7,6 +7,12 @@
 
     <link rel="stylesheet" href="./style.css">
 
+    <!-- Google Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+
     <!-- Animate CSS CDN -->
 
     <link
@@ -19,26 +25,35 @@
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
 </head>
-<body class="bg-gray-700 ">
+<body class="bg-gray-700 font-['Poppins']">
 
-    <nav class="bg-gray-500 w-full px-3 md:w-4/5 mx-auto flex justify-between md:static relative ">
+    <!-- Nav-Bar & Main-Container Of Nav-Bar -->
+    <nav class="bg-white w-full md:mt-10 px-2 py-3 md:w-4/5 mx-auto flex justify-between md:static relative ">
+        <!-- Child-1 On Above:md & Sub-Container-1 -->
+        <div class=" flex self-center w-fit">
+        <img src="./assets/logo.png " class=" md:w-fit" alt="logo">
+        <h1 class="w-fit font-bold ml-3 self-center text-lg">E&nbsp;GURU</h1>
+        </div>
+        <!-- Child-1 On Below:md & Sub-Container-1 -->
 
-        <h1 class="text-3xl">E Guru</h1>
-        <ol class="bg-white hidden md:flex justify-evenly flex-col md:flex-row items-center opacity-0 md:opacity-100 px-3  absolute md:static w-fit md:w-fit top-full right-0 h-screen md:h-auto
+        <!-- Child-2 & Sub-Container-2 -->
+        <ol class= "hidden md:flex flex-col md:flex-row items-center opacity-0 md:opacity-100  absolute md:static w-fit top-0 right-0  h-screen md:h-auto
         animate__animated 
-        
+        md:w-fit px-2
         ">
-            <li class="md:inline px-3 py-3 "><a href="#">Home</a></li>
-            <li class="md:inline px-3 py-3"><a href="#">About Us</a></li>
-            <li class="md:inline px-3 py-3"><a href="#">Features</a></li>
-            <li class="md:inline px-3 py-3 "><a href="#">How It Works</a></li>
+            <li class=" md:inline  max-[1070px]:mx-1.5  min-[1071px]:mx-12  "><a class="font-medium text-[#FF5202] hover:text-[#FF5202]" href="#" >Home</a></li>
+            <li class="md:inline  max-[1070px]:mx-1.5 min-[1071px]:mx-12 "><a class="font-medium text-gray-500 hover:text-[#FF5202]" href="#">About&nbsp;Us</a></li>
+            <li class="md:inline  max-[1070px]:mx-1.5  min-[1071px]:mx-12"><a class="font-medium text-gray-500 hover:text-[#FF5202]" href="#">Features</a></li>
+            <li class="md:inline  max-[1070px]:mx-1.5   min-[1071px]:mx-12 "><a class="font-medium text-gray-500 hover:text-[#FF5202]" href="#">How&nbsp;It&nbsp;Works</a></li>
 
-            <button class=" w-fit px-3 py-3 block md:hidden">Sign Up</button>
+            <button class=" w-fit  px-9 py-4 font-semibold border border-black block md:hidden">Sign&nbsp;Up</button>
         </ol>
-        
-        <button class=" bg-white px-3 py-3 hidden md:block">Sign Up</button>
+        <!-- Child-3 -->   
+        <button class=" bg-white  px-9 py-4 font-semibold border border-black hidden md:block">Sign&nbsp;Up</button>
 
-        <ion-icon  class="block md:hidden text-3xl" name="menu" class="text-3xl" onclick="Menu(this);"></ion-icon>
+        <!-- <ion-icon  class="block self-center md:hidden text-3xl" name="menu" class="text-3xl" onclick="Menu(this);"></ion-icon> -->
+
+        
     </nav>
 
     <script>
