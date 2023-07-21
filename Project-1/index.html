@@ -7,6 +7,10 @@
 
     <link rel="stylesheet" href="./style.css">
 
+    <!-- Functionality for Hamburger Button -->
+    <script src="./script.js" defer></script>
+
+
     <!-- Google Fonts -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,62 +29,64 @@
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
 </head>
-<body class="bg-gray-700 font-['Poppins']">
+<body class="bg-white font-['Poppins'] h-screen">
 
     <!-- Nav-Bar & Main-Container Of Nav-Bar -->
-    <nav class="bg-white w-full md:mt-10 px-2 py-3 md:w-4/5 mx-auto flex justify-between md:static relative ">
-        <!-- Child-1 & Sub-Container-1 on Below-->
+    <nav class="bg-white w-full md:top-0 md:pt-14  md:left-32  px-2 py-1 md:py-3 md:w-4/5 mx-auto flex justify-between fixed ">
+        <!-- Child-1 & Sub-Container-1 on Below md (Hamburger-Menu)-->
 
-        <div class="h-fit">
-            <img class="block self-end md:hidden text-3xl" src="./assets/menu-icon.png" alt="Menu">
-            
+        <div data-menu_and_close="menu_and_close_button "  class="block md:hidden h-fit self-center" onclick="Menu(this);">
+            <img data-menu="menu" class="block self-end md:hidden" src="./assets/menu-icon.png" alt="Menu">
+
+            <ion-icon data-close="close"  class="hidden self-center md:hidden text-3xl" name="close" class="text-3xl" ></ion-icon>
         </div>
         
 
-        <!-- Child-1 & Sub-Container-1 on above-->
-        <div class=" flex self-center w-fit">
-        <img src="./assets/logo.png " class=" md:w-fit" alt="logo">
+        <!-- Child-1 & Sub-Container-1 on above md-->
+        <div class=" flex self-center w-fit z-10">
+        <img src="./assets/logo.png " class=" w-8 md:w-fit" alt="logo">
         <h1 class="w-fit font-bold ml-3 self-center text-lg">E&nbsp;GURU</h1>
         </div>
 
         
 
-        <!-- Child-2 & Sub-Container-2 -->
-        <ol class= "hidden md:flex flex-col md:flex-row items-center opacity-0 md:opacity-100  absolute md:static w-fit top-0 right-0  h-screen md:h-auto
-        animate__animated 
+        <!-- Child-2 & Sub-Container-2 (Navigation Links)-->
+        <ol class= "bg-white hidden md:flex flex-col md:flex-row items-center opacity-0 md:opacity-100  absolute md:static w-fit top-full left-0  h-screen md:h-auto
+        animate__animated max-md:z-50
         md:w-fit px-2
         ">
-            <li class=" md:inline  max-[1070px]:mx-1.5  min-[1071px]:mx-12  "><a class="font-medium text-[#FF5202] hover:text-[#FF5202]" href="#" >Home</a></li>
-            <li class="md:inline  max-[1070px]:mx-1.5 min-[1071px]:mx-12 "><a class="font-medium text-gray-500 hover:text-[#FF5202]" href="#">About&nbsp;Us</a></li>
-            <li class="md:inline  max-[1070px]:mx-1.5  min-[1071px]:mx-12"><a class="font-medium text-gray-500 hover:text-[#FF5202]" href="#">Features</a></li>
-            <li class="md:inline  max-[1070px]:mx-1.5   min-[1071px]:mx-12 "><a class="font-medium text-gray-500 hover:text-[#FF5202]" href="#">How&nbsp;It&nbsp;Works</a></li>
+            <li class="max-md:pb-5 md:inline max-[1070px]:mx-1.5  min-[1071px]:mx-12  "><a class="font-medium text-[#FF5202] hover:text-[#FF5202]" href="#" >Home</a></li>
+            <li class="max-md:py-5 md:inline  max-[1070px]:mx-1.5 min-[1071px]:mx-12 "><a class="font-medium text-gray-500 hover:text-[#FF5202]" href="#">About&nbsp;Us</a></li>
+            <li class="max-md:py-5 md:inline  max-[1070px]:mx-1.5  min-[1071px]:mx-12"><a class="font-medium text-gray-500 hover:text-[#FF5202]" href="#">Features</a></li>
+            <li class="max-md:py-5 md:inline  max-[1070px]:mx-1.5   min-[1071px]:mx-12 "><a class="font-medium text-gray-500 hover:text-[#FF5202]" href="#">How&nbsp;It&nbsp;Works</a></li>
 
-            <button class=" w-fit  px-9 py-4 font-semibold border border-black block md:hidden">Sign&nbsp;Up</button>
+            <button class="max-md:gap-5 w-fit  px-9 py-4 font-semibold border border-black block md:hidden">Sign&nbsp;Up</button>
         </ol>
-        <!-- Child-3 -->   
-        <button class=" bg-white  px-9 py-4 font-semibold border border-black hidden md:block">Sign&nbsp;Up</button>
+        <!-- Child-3 (Signup-Button) -->   
+        <button class=" bg-white px-10 py-3 font-semibold border border-black hidden md:block">Sign&nbsp;Up</button>
 
         <img src="./assets/user-profile.png" alt="" class="block md:hidden">
-        <!-- <ion-icon  class="block self-center md:hidden text-3xl" name="menu" class="text-3xl" onclick="Menu(this);"></ion-icon> -->
-
         
     </nav>
 
-    <script>
-        function Menu(e){
-            let ol = document.querySelector('nav ol');
-            //let menu = document.querySelector('name');  
-
-           
-            e.name === 'menu' ? (e.name ='close', ol.classList.add('opacity-100'),ol.classList.add('flex'))
-             :
-            (e.name = 'menu' , ol.classList.remove('opacity-100')
-            
-            ) ;
-            //ol.classList.toggle('max-md:hidden');
-            ol.classList.toggle('hidden')
-     }
+    <!-- Main & Main-Container -->
+    <main class="md:w-4/5 h-full grid grid-cols-1 md:grid-cols-[1.25fr_1fr] relative top-10 md:top-40 px-2 mx-auto border  -z-10">
         
-    </script>
+        <div class="flex flex-col gap-8 border border-black ">
+            <h1 class="text-6xl font-semibold text-left text-[#1C1C1C] md:leading-tight">STUDY FROM&nbsp;<br> HOME WITH EXPERT</h1>
+
+            <div>
+                <h2 class="text-xl text-[#1C1C1C]" >A learning system based on formalised teaching with the help of resources.
+                </h2>
+            </div>
+
+            <div class="flex gap-4">
+                <button class="">Get Started</button>
+                <button class="">Learn More</button>
+            </div>
+        </div>
+    
+    </main>
+
 </body>
 </html>
