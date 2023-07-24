@@ -29,10 +29,10 @@
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
 </head>
-<body class="bg-white font-['Poppins'] h-screen">
+<body class="bg-white font-['Poppins'] ">
 
     <!-- Nav-Bar & Main-Container Of Nav-Bar -->
-    <nav class="bg-white w-full md:top-0 md:pt-14  lg:left-32 md:left-20  px-2 py-1 md:py-3 md:w-4/5 mx-auto flex justify-between fixed ">
+    <nav class="bg-white w-full md:top-0 md:pt-14  lg:left-32 md:left-20  px-2 py-1 md:py-3 md:w-4/5 mx-auto flex justify-between fixed  z-50">
         <!-- Child-1 & Sub-Container-1 on Below md (Hamburger-Menu)-->
 
         <div data-menu_and_close="menu_and_close_button "  class="block md:hidden h-fit self-center" onclick="Menu(this);">
@@ -43,7 +43,7 @@
         
 
         <!-- Child-1 & Sub-Container-1 on above md-->
-        <div class=" flex self-center w-fit z-10">
+        <div class=" flex self-center w-fit ">
         <img src="./assets/logo.png " class=" w-8 md:w-fit" alt="logo">
         <h1 class="w-fit font-bold ml-3 self-center text-lg">E&nbsp;GURU</h1>
         </div>
@@ -52,31 +52,31 @@
 
         <!-- Child-2 & Sub-Container-2 (Navigation Links)-->
         <ol class= "bg-white hidden md:flex flex-col md:flex-row items-center opacity-0 md:opacity-100  absolute md:static w-fit top-full left-0  h-screen md:h-auto
-        animate__animated max-md:z-50
+        animate__animated -z-10
         md:w-fit px-2
         ">
-            <li class="max-md:pb-5 md:inline max-[1070px]:mx-1.5  min-[1071px]:mx-12  "><a class="font-medium text-[#FF5202] hover:text-[#FF5202]" href="#" >Home</a></li>
-            <li class="max-md:py-5 md:inline  max-[1070px]:mx-1.5 min-[1071px]:mx-12 "><a class="font-medium text-gray-500 hover:text-[#FF5202]" href="#">About&nbsp;Us</a></li>
-            <li class="max-md:py-5 md:inline  max-[1070px]:mx-1.5  min-[1071px]:mx-12"><a class="font-medium text-gray-500 hover:text-[#FF5202]" href="#">Features</a></li>
-            <li class="max-md:py-5 md:inline  max-[1070px]:mx-1.5   min-[1071px]:mx-12 "><a class="font-medium text-gray-500 hover:text-[#FF5202]" href="#">How&nbsp;It&nbsp;Works</a></li>
+            <li class="max-md:pb-5 md:inline max-[1070px]:mx-1.5  min-[1071px]:mx-12  "><a class="font-medium text-gray-500 hover:text-[#FF5202]" href="https://github.com/Abhishekranjan-01 " target="_blank">Home</a></li>
+            <li class="max-md:py-5 md:inline  max-[1070px]:mx-1.5 min-[1071px]:mx-12 "><a class="font-medium text-gray-500 hover:text-[#FF5202]" href="https://github.com/Abhishekranjan-01" target="_blank">About&nbsp;Us</a></li>
+            <li class="max-md:py-5 md:inline  max-[1070px]:mx-1.5  min-[1071px]:mx-12"><a class="font-medium text-gray-500 hover:text-[#FF5202]" href="https://github.com/Abhishekranjan-01" target="_blank">Features</a></li>
+            <li class="max-md:py-5 md:inline  max-[1070px]:mx-1.5   min-[1071px]:mx-12 "><a class="font-medium text-gray-500 hover:text-[#FF5202]" href="https://github.com/Abhishekranjan-01" target="_blank">How&nbsp;It&nbsp;Works</a></li>
 
-            <button class="max-md:gap-5 w-fit  px-9 py-4 font-semibold border border-black block md:hidden">Sign&nbsp;Up</button>
+            <button class="max-md:gap-5 hover:text-[#FF5202] w-fit  px-9 py-4 font-semibold border border-black block md:hidden" onclick="window.open('https://github.com/Abhishekranjan-01')">Sign&nbsp;Up</button>
         </ol>
         <!-- Child-3 (Signup-Button) -->   
-        <button class=" bg-white px-10 py-3 font-semibold border border-black hidden md:block">Sign&nbsp;Up</button>
+        <button class=" bg-white px-10 py-3 font-semibold border border-black hidden md:block hover:text-[#FF5202]" onclick="window.open('https://github.com/Abhishekranjan-01')">Sign&nbsp;Up</button>
 
         <img src="./assets/user-profile.png" alt="" class="block md:hidden">
         
     </nav>
 
     <!-- Main & Main-Container -->
-    <main class="md:w-4/5 h-fit grid grid-cols-1 md:grid-cols-[1.5fr_1fr] sm:grid-rows-1
+    <main class="md:w-4/5 h-full grid grid-cols-1 md:grid-cols-[1.5fr_1fr] sm:grid-rows-1
     grid-rows-[0.7fr_0.5fr_0.2fr_0.2fr]
-    relative top-10 md:top-40 px-2 mx-auto border -z-10 gap-8 md:relative  ">
+    relative top-10 md:top-40 px-2 mx-auto -z-10 gap-8 md:relative  ">
         
         <!-- Col-1 In Main Container i.e left-side of screen -->
         <!-- Row-1 In Main Container below sm -->
-        <div class="flex flex-col gap-8 border border-red-500 pb-8 md:pb-0 first-letter:
+        <div class="flex flex-col gap-8 pb-8 md:pb-0 first-letter:
         max-[1150px]:pl-5 max-[1023px]:pl-0
         ">
 
@@ -93,9 +93,10 @@
 
             <!-- Buttons On Col-1 -->
 
-            <div class="hidden  sm:flex gap-5">
-                <button class="px-8 py-4 bg-[#FF5202] text-white">Get Started</button>
-                <button class="px-8 py-4 border border-black text-gray-900 font-semibold">Learn More</button>
+            <div class="hidden sm:flex gap-5">
+                <button class="cursor-pointer px-8 py-4 bg-[#FF5202] text-white" onclick="window.open('https://github.com/Abhishekranjan-01')">Get Started</button>
+
+                <button class="cursor-pointer px-8 py-4 border text-gray-900 font-semibold" onclick="window.open('https://github.com/Abhishekranjan-01')">Learn More</button>
             </div>
 
             <img src="./assets/curve-arrow.png" alt="Curve-Arrow" class="hidden sm:block w-1/4 md:relative self-end right-10 max-[1140px]:top-0 min-[1141px]:-top-20">
@@ -104,7 +105,7 @@
 
          <!-- Col-2 In Main Container i.e right-side of screen -->
          <!-- Row-2 In Main Container below sm -->
-        <div class="bg-white flex flex-col border border-black relative sm:mt-16 md:mt-0 px-5 h-fit ">
+        <div class="bg-white flex flex-col relative sm:mt-16 md:mt-0 px-5 h-fit ">
 
             <!-- <div data-hollow="Hollow" class="w-full h-full bg-white z-30 relative"></div> -->
             
@@ -113,7 +114,7 @@
             <!-- Orange Background -->
             <img class="sm:w-full md:w-full h-full self-center" src="./assets/main-image-bg.png" alt="orange-bg">
             <!-- Person Image -->   
-            <img class="absolute h-full w-3/5 top-0  justify-self-center self-center" src="./assets/main-image.png" alt="Person-Image">
+            <img class="absolute sm:h-[90%] w-3/5 bottom-2  justify-self-center self-center" src="./assets/main-image.png" alt="Person-Image">
             <!-- Pattern-Around Person -->
             <img class="absolute w-full h-full -top-1 self-center" src="./assets/main-image-pattern.png" alt="Pattern-Around-Person">
             <!-- Orange-Circe -->
@@ -124,16 +125,90 @@
         </div>
         <!-- 3rd Row In Main-Container below sm (Buttons)-->
         <div class="flex gap-5 sm:hidden justify-self-center self-start mt-3">
-            <button class="px-4 py-2 h-fit bg-[#FF5202] text-white">Get Started</button>
-            <button class="px-4 py-2 h-fit border border-black text-gray-900 font-semibold">Learn More</button>
+            <button class="cursor-pointer px-4 py-2 h-fit bg-[#FF5202] text-white" onclick="window.open('https://github.com/Abhishekranjan-01')" >Get Started</button>
+            <button class="cursor-pointer px-4 py-2 h-fit border border-black text-gray-900 font-semibold" onclick="window.open('https://github.com/Abhishekranjan-01')">Learn More</button>
         
           
         </div>
         <!-- 4th Row In Main-Container below sm (Curve-Arrow)-->
-        <img src="./assets/curve-arrow.png" alt="Curve-Arrow" class="justify-self-center self-start relative -right-24 block sm:hidden w-1/4 ">
+        <img src="./assets/curve-arrow.png" alt="Curve-Arrow" class="justify-self-center self-start relative -right-24 -top-6 block sm:hidden w-1/4 ">
     </main>
 
-     
+    <!-- Footer Section and Main-Container -->
+    
+    <footer class="justify-evenly bg-[#262543] px-3 py-10  md:h-64  w-full sm:mt-28 
+    min-h-full grid md:grid-cols-[1.3fr_1fr_1fr_1fr] gap-8 z-50
+    ">
+
+        
+
+            <!-- Col-1 -->
+            <div class="flex flex-col gap-6 sm:gap-6 md:gap-6 sm:w-full sm:relative min-h-[172px] h-full">
+               
+                    <h1 class="text-white text-2xl sm:text-3xl md:text-4xl font-semibold">
+                        WHY WE ARE THE BEST
+                    </h1>
+    
+                    <p class="text-gray-300 sm:absolute bottom-0 max-sm:w-[200px]">a learning system based on formalised teaching with help of...</p>
+                
+                
+            </div>
+            
+            <!-- Col-2 -->
+           
+
+                <div class=" flex flex-col self-center gap-4 sm:relative min-h-[172px] h-full" >
+                    <div class="bg-[#1CC7A5] flex flex-col justify-center w-fit min-w-[55px] h-12 rounded-lg">
+                    <img class="mx-auto" src="./assets/vector3.png" alt="Girl-face">
+                
+                </div>            
+
+                <h1 class="text-lg sm:text-xl md:text-2xl font-semibold text-white">
+                    EXPERT TEACHER
+                </h1>
+
+                <p class="text-sm text-gray-300 sm:absolute bottom-0 w-full ">
+                    a learning system based on formalised teaching
+                </p>
+                </div>
+
+                
+           
+
+        <!-- col-3 -->
+            <div class=" flex flex-col self-center gap-4 sm:relative min-h-[172px] h-full">
+
+                <div class="bg-[#FC5B11] flex flex-col justify-center w-fit min-w-[55px] h-12 rounded-lg">
+                    <img class="mx-auto " src="./assets/vector2.png" alt="Bulb">
+                </div>
+
+                <h1 class="text-lg sm:text-xl md:text-2xl font-semibold text-white">
+                    ONLINE COURSES
+                </h1>
+
+                <p class="text-sm text-gray-300 sm:absolute bottom-0 w-full ">
+                a learning system based on formalised teaching
+                </p>
+            </div>
+        <!-- Col-4 -->
+
+        <div class=" flex flex-col self-center gap-4 sm:relative sm:w-full min-h-[172px] h-full">
+
+            <div class="bg-[#525BF1] flex flex-col justify-center  w-fit min-w-[55px] h-12 rounded-lg">
+                <img class="mx-auto " src="./assets/vector1.png" alt="">
+            </div>
+
+            <h1 class="text-lg sm:text-xl md:text-2xl text-white font-semibold ">24/7 SUPPORT</h1>
+
+            <P class="text-sm text-gray-300 sm:absolute bottom-0 w-full ">
+                a learning system based on formalised teaching
+            </P>
+        </div>
+
+            
+        
+    
+    </footer>
 
 </body>
 </html>
