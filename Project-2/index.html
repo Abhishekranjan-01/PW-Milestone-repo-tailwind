@@ -5,16 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hospital Landing Page</title>
     <link rel="stylesheet" href="style.css">
+    
+    <!-- Google Fonts - CDN -->
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+    
     <!-- Hamburger CDN -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-
+    <!-- Functionality for Hamburger-Menu -->
+    <script src="./script.js" defer></script>
 </head>
-<body>
+<body class="bg-gray-600 font-['Poppins','sans-serif'] h-screen">
     <!-- Main -->
-    <main class="flex md:justify-center">
-        <img class="absolute w-full md:h-full -z-10" src="./assets/background.png" alt="Backgrond Image">
+    <main class="flex justify-center h-full w-full">
+        <img class="absolute w-full sm:h-full md:h-full -z-10" src="./assets/background.png" alt="Backgrond Image">
        <!-- Nav-Bar -->
         <nav class="fixed flex w-full md:w-4/5 min-[840px]:gap-1 lg:gap-x-14 md:my-4 h-fit">
 
@@ -28,39 +35,95 @@
 
         </div>
         <!-- Col-2 -->
-        <ul data-nav_links="nav_links" class="text-black md:text-white font-semibold bg-white md:bg-transparent text-lg h-screen md:h-fit  w-fit absolute md:static opacity-100 hidden md:flex justify-evenly md:items-end flex-col  md:flex-row -z-10">
-            <li class="mx-3 "><a href="#"> Home</a></li>
-            <li class="mx-3 "><a href="#"> Product</a></li>
-            <li class="mx-3 "><a href="#"> Pricing</a></li>
-            <li class="mx-3 "><a href="#"> Contact</a></li>
+        <ul data-nav_links="nav_links" class=" text-black md:text-white bg-white md:bg-transparent text-base lg:text-lg h-screen md:h-fit w-[25vw] md:w-fit absolute md:static opacity-100 hidden md:flex justify-evenly md:items-end flex-col md:flex-row -z-10">
+            <li class="mx-2 min-[800px]:mx-3 "><a href="#"> Home</a></li>
+            <li class="mx-2 min-[800px]:mx-3 "><a href="#"> Product</a></li>
+            <li class="mx-2 min-[800px]:mx-3 "><a href="#"> Pricing</a></li>
+            <li class="mx-2 min-[800px]:mx-3 "><a href="#"> Contact</a></li>
         </ul>
 
         <button class="bg-sky-400 px-3 text-xs md:text-base py-1.5 md:px-7 md:py-3 text-white font-semibold rounded-lg absolute right-0 mx-1 my-1 md:my-0 md:mx-0">Get&nbsp;Quote&nbsp;Now</button>
         </nav>
+
+        <!-- Hero-Section -->
+
+        <div class="flex flex-col justify-between items-center md:flex-row gap-10 md:gap-0 w-4/5 h-full">
+            <!-- Col-1 -->
+            <div class="flex flex-col gap-4 md:gap-10 justify-center items-center mt-12 sm:mt-12 lg:w-2/4 md:mt-36">
+                <!--N- Col-1 -->
+                <h1 class=" sm:self-auto text-xl sm:text-3xl md:text-4xl lg:text-6xl text-white font-bold ">Meet the Best Hospital</h1>
+
+                <!-- Col-2 -->
+                <h2 class="text-white text-sm sm:text-base md:text-lg leading-none">
+                    We know how large objects will act, but things on a small scale.
+                </h2>
+                
+                <!-- Col-3 -->
+                <div class="flex md:self-start gap-3 ">
+                    <button class="bg-sky-400 text-white font-semibold rounded-3xl px-4 py-2 md:px-8 md:py-4">Get&nbsp;quote&nbsp;Now</button>
+
+                    <button class="bg-transparent text-white font-semibold rounded-3xl px-4 py-2 md:px-8 md:py-4 border border-white">Learn&nbsp;More</button>
+                </div>
+
+            </div>
+
+            <!-- Col-2 -->
+            <div class=" flex flex-col items-end justify-center h-full">
+                <form class="bg-gray-800 sm:bg-white flex flex-col px-6 w-full md:mt-20 rounded-xl" action="">
+
+                    <h1 class="text-white sm:text-gray-800 text-center text-semibold text-2xl font-semibold w-full mt-9 mb-4">Book Appointment</h1>
+
+                    <!-- Name -->
+                    <label class="text-white sm:text-gray-800 font-semibold w-4/5 my-2" for="Name">Name*</label>
+                    
+                    <input class="py-2 px-4 rounded-lg bg-gray-200" type="text" name="Name" placeholder="Full Name*">
+                
+                <!-- Email-Address -->
+
+                <label class="text-white sm:text-gray-800 block font-semibold w-full my-2" for="Email">Email address*</label>
+                    
+                <input class="py-2 px-4 rounded-lg bg-gray-200" class="w-full" type="email" name="Email" placeholder="example@gmail.com">
+
+                <!-- Department -->
+
+                <label class="text-white sm:text-gray-800 block font-semibold w-full my-2" for="Department">Department*</label>
+
+                <select class="py-2 px-4 rounded-lg bg-gray-200" name="Department" id="Department">
+                    <option value="">-- Please Select --</option>
+
+                    <option value="Genral Medicine">Genral Medicine</option>
+                    <option value="Pathology">Pathology</option>
+                    <option value="Neurology">Neurology</option>
+                    <option value="Gynaecology">Gynaecology</option>
+                    <option value="Orthopedics">Orthopedics</option>
+                    <option value="Anesthesisology">Anesthesisology</option>
+                    <option value="Cardiology">Cardiology</option>
+                </select>
+
+                <!-- Time -->
+
+                <label class="text-white sm:text-gray-800 block font-semibold w-full my-2" for="Department">Time*</label>
+
+                <select class="py-2 px-4 rounded-lg bg-gray-200" name="Time" id="Department">
+                    <option value="">-- Please Select --</option>
+
+                    <option value="09:00 AM">09:00 AM Available</option>
+                    <option value="10:00 AM">10:00 AM Available</option>
+                    <option value="11:00 AM">11:00 AM Available</option>
+                    <option value="12:00 PM">12:00 PM Available</option>
+                    <option value="02:00 PM">02:00 PM Available</option>
+                    <option value="03:00 PM">03:00 PM Available</option>
+                    <option value="04:00 PM">04:00 PM Available</option>
+                </select>
+
+                <button class="bg-sky-400 text-white font-semibold w-full py-2 px-4 my-8 rounded-lg">Book Appointment</button>
+
+                </form>
+            </div>
+        </div>
     </main>
 
-    <script>
 
-        const nav_links = document.querySelector('[data-nav_links]');
-        
-        
 
-       function Menu(e){
-        e.name === 'menu' ? (e.name = 'close',
-        nav_links.classList.add('opacity-100'),
-        nav_links.classList.add('flex'),
-        nav_links.classList.remove('hidden'))
-        :
-        (e.name = 'menu',
-        nav_links.classList.add('hidden'),
-        nav_links.classList.remove('flex'),
-        nav_links.classList.remove('opacity-100')
-        );
-       
-        
-        
-        //console.log(nav_bar);
-        }
-    </script>
 </body>
 </html>
