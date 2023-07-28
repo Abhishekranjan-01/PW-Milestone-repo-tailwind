@@ -1,7 +1,8 @@
-// Functionality for Hamburger
 const nav_links = document.querySelector('[data-nav_links]');
-        
-    
+
+
+
+// For Hamburger Functionality
 function Menu(e){
  e.name === 'menu' ? (e.name = 'close',
  nav_links.classList.add('opacity-100'),
