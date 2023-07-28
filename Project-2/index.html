@@ -25,10 +25,10 @@
 </head>
 <body class=" font-['Poppins','sans-serif'] ">
     <!-- Main -->
-    <main class="flex justify-center h-full w-full">
+    <main class=" md:mix-blend-difference flex justify-center h-full w-full ">
         <img class="absolute w-full sm:h-full md:h-full -z-10" src="./assets/background.png" alt="Backgrond Image">
        <!-- Nav-Bar -->
-        <nav class="fixed flex w-full md:w-4/5 min-[840px]:gap-1 lg:gap-x-14 md:my-4 h-fit z-10">
+        <nav class="fixed flex w-full md:w-4/5 min-[840px]:gap-1 lg:gap-x-14 md:my-4 h-fit z-10 ">
 
         <!-- Col-1 -->
         <div class="items-end h-fit w-fit">
@@ -40,24 +40,33 @@
 
         </div>
         <!-- Col-2 -->
-        <ul data-nav_links="nav_links" class=" text-black md:text-white bg-gray-200 md:bg-transparent text-base lg:text-lg h-screen md:h-fit w-[45vw] md:w-fit absolute md:static opacity-100 hidden md:flex justify-evenly items-center md:items-end flex-col md:flex-row -z-10">
+        <ul data-nav_links="nav_links" class=" text-black md:text-white bg-gray-200 md:bg-transparent text-base lg:text-lg h-screen md:h-fit w-[45vw] md:w-fit absolute md:static opacity-100 hidden md:flex justify-evenly items-center md:items-end flex-col md:flex-row -z-10 ">
 
-            <li class="px-2 min-[800px]:px-3 w-full text-center"><a class="block font-semibold md:font-normal border-b-2 border-dashed border-black md:border-none w-full" href="#"> Home</a></li>
+            <li class="px-2 lg:px-3 w-full text-center"><a class="block font-semibold md:font-normal border-b-2 border-dashed border-black md:border-none w-full" href="#"> Home</a></li>
 
-            <li class="px-2 min-[800px]:px-3 w-full text-center"><a class="block font-semibold md:font-normal border-b-2 border-dashed border-black md:border-none w-full" href="#"> Product</a></li>
+            <li class="px-2 lg:px-3 w-full text-center"><a class="block font-semibold md:font-normal border-b-2 border-dashed border-black md:border-none w-full" href="#"> Product</a></li>
             
-            <li class="px-2 min-[800px]:px-3 w-full text-center"><a class="block font-semibold md:font-normal border-b-2 border-dashed border-black md:border-none w-full" href="#"> Pricing</a></li>
+            <li class="px-2 lg:px-3 w-full text-center"><a class="block font-semibold md:font-normal border-b-2 border-dashed border-black md:border-none w-full" href="#"> Pricing</a></li>
             
             <li class="px-2 min-[800px]:px-3 w-full text-center "><a class="block font-semibold md:font-normal border-b-2 border-dashed border-black md:border-none w-full" href="#"> Contact</a></li>
+
+            <i class="fa-solid fa-sun fa-xl self-center "></i>
         
         </ul>
+        
+        
+        
+           
+           
+        
+        <button class="bg-sky-400 text-xs md:text-base py-1.5 px-3 md:px-3 md:py-1.5 lg:px-7 lg:py-3 text-white font-semibold rounded-lg absolute right-0 mx-1 my-1 md:my-0 md:mx-0">Get&nbsp;Quote&nbsp;Now&nbsp;<i class="fa-solid fa-arrow-right fa-sm md:ml-1 lg:ml-3 z-50" style="color: #ffffff;"></i></button>
 
-        <button class="bg-sky-400 text-xs md:text-base py-1.5 px-3 md:px-3 md:py-1.5 lg:px-7 lg:py-3 text-white font-semibold rounded-lg absolute right-0 mx-1 my-1 md:my-0 md:mx-0">Get&nbsp;Quote&nbsp;Now&nbsp;<i class="fa-solid fa-arrow-right fa-sm md:ml-1 lg:ml-3" style="color: #ffffff;"></i></button>
+        
         </nav>
 
         <!-- Hero-Section -->
 
-        <div class="flex flex-col justify-between items-center md:flex-row gap-10 md:gap-0 w-4/5 h-full">
+        <div class="flex flex-col justify-between items-center md:flex-row gap-10 md:gap-0 w-4/5 h-full md:min-h-[650px] ">
             <!-- Col-1 -->
             <div class="flex flex-col gap-4 md:gap-10 justify-center items-center mt-12 sm:mt-12 lg:w-2/4 md:mt-36">
                 <!--N- Col-1 -->
@@ -70,7 +79,7 @@
                 
                 <!-- Col-3 -->
                 <div class="flex md:self-start gap-3 ">
-                    <button class="bg-sky-400 text-white font-semibold rounded-3xl px-4 py-2 md:px-8 md:py-4">Get&nbsp;quote&nbsp;Now</button>
+                    <button class="bg-sky-400  text-white font-semibold rounded-3xl px-4 py-2 md:px-8 md:py-4">Get&nbsp;quote&nbsp;Now</button>
 
                     <button class="bg-transparent text-white font-semibold rounded-3xl px-4 py-2 md:px-8 md:py-4 border border-white">Learn&nbsp;More</button>
                 </div>
@@ -134,7 +143,7 @@
     </main>
 
     <!-- Heading Section -->
-    <section class="bg-white flex justify-center flex-col gap-20 mt-24 md:mt-16 px-5 ">
+    <section class="bg-white flex justify-center flex-col gap-20 pt-24 md:pt-16 px-5">
         <!-- Leading Medicine -->
         <div class="md:mt-10 flex justify-center flex-col gap-5 items-center px-5 md:px-0">
             <h1 class="text-2xl lg:text-3xl text-center font-semibold text-gray-900">Leading Medicine</h1>
@@ -224,7 +233,7 @@
 
     <!-- Again Heading Section -->
 
-    <section class="bg-gray-100 flex justify-center flex-col gap-20 mt-24 md:mt-16 px-5 py-14 ">
+    <section class="bg-gray-100 flex justify-center flex-col gap-20 mt-24 md:mt-16 px-5 py-14">
         <!-- Heading & Caption -->
         <div class="md:mt-10 flex justify-center flex-col gap-5 items-center px-5 md:px-0">
             <h1 class="text-2xl lg:text-3xl text-center font-semibold text-gray-900">Leading Medicine</h1>
@@ -277,7 +286,7 @@
 
     <!-- FAQ CAPTION Section -->
 
-    <section class="flex justify-center flex-col gap-20 mt-24 md:mt-16 px-5 pb-20 ">
+    <section class="bg-white flex justify-center flex-col gap-20 pt-24 md:pt-16 px-5 pb-20 ">
 
          <!-- Heading & Caption -->
          <div class="md:mt-10 flex justify-center flex-col gap-5 items-center px-5 md:px-0">
@@ -412,7 +421,7 @@
 
     <!-- Pricing Section -->
 
-    <section class="bg-gray-100 flex justify-center flex-col gap-20 mt-24 md:mt-16 px-5 py-14 ">
+    <section class="bg-gray-100 flex justify-center flex-col gap-20 mt-24 md:mt-16 px-5 py-14 md:mix-blend-difference">
 
          <!-- Heading & Caption -->
          <div class="md:mt-10 flex justify-center flex-col gap-5 items-center px-5 md:px-0">
@@ -499,7 +508,7 @@
                         <h2 class="text-gray-500 font-semibold text-center w-4/6">organize across all apps by hand</h2>
 
                         <div class="flex">
-                            <h2 class="text-5xl text-sky-500 font-semibold">0</h2>
+                            <h2 class="text-5xl text-sky-500 font-semibold">9.99</h2>
                         
                             <div class="flex flex-col">
                             <sup class="text-lg font-bold text-sky-500 ml-3 mt-1">$</sup><sub class="text-sky-300 text-base font-semibold ml-3 relative -top-2">Per Month</sub>
@@ -532,7 +541,7 @@
                         </li>
 
                         <li class=" flex gap-2 h-full flex-row">
-                            <i class="fa-sharp fa-solid fa-circle-check fa-2xl  h-fit self-center" style="color: #979797;"></i>
+                            <i class="fa-sharp fa-solid fa-circle-check fa-2xl  h-fit self-center" style="color: #37b346;"></i>
                         
                             <h4 class="font-semibold text-sm md:text-base">1GB Cloud Storage</h4>
                         </li>
@@ -561,7 +570,7 @@
                         <h2 class="text-gray-500 font-semibold text-center w-4/6">organize across all apps by hand</h2>
 
                         <div class="flex">
-                            <h2 class="text-5xl text-sky-500 font-semibold">0</h2>
+                            <h2 class="text-5xl text-sky-500 font-semibold">19.99</h2>
                         
                             <div class="flex flex-col">
                             <sup class="text-lg font-bold text-sky-500 ml-3 mt-1">$</sup><sub class="text-sky-300 text-base font-semibold ml-3 relative -top-2">Per Month</sub>
@@ -594,13 +603,13 @@
                         </li>
 
                         <li class=" flex gap-2 h-full flex-row">
-                            <i class="fa-sharp fa-solid fa-circle-check fa-2xl  h-fit self-center" style="color: #979797;"></i>
+                            <i class="fa-sharp fa-solid fa-circle-check fa-2xl  h-fit self-center" style="color: #37b346;;"></i>
                         
                             <h4 class="font-semibold text-sm md:text-base">1GB Cloud Storage</h4>
                         </li>
 
                         <li class=" flex gap-2 h-full flex-row">
-                            <i class="fa-sharp fa-solid fa-circle-check fa-2xl  h-fit self-center" style="color: #979797;"></i>
+                            <i class="fa-sharp fa-solid fa-circle-check fa-2xl  h-fit self-center" style="color: #37b346;"></i>
                         
                             <h4 class="font-semibold text-sm md:text-base">Email and community support</h4>
                         </li>
@@ -617,7 +626,7 @@
 
     <!-- Subscribe-Section -->
 
-    <section class="bg-gray-800 flex flex-col md:flex-row justify-evenly justify-items-center items-center gap-20 py-14" >
+    <section class="bg-gray-800 flex flex-col md:flex-row justify-evenly justify-items-center items-center gap-20 py-14 md:mix-blend-difference" >
 
         <!-- Col-1 -->
         <div class=" w-3/5 md:w-[37%]">
@@ -637,7 +646,7 @@
 
     <!-- Footer Section -->
 
-    <section class="bg-gray-100 flex justify-center flex-col gap-20 px-5 py-14 border-4 border-black ">
+    <section class="bg-gray-100 flex justify-center flex-col gap-20 px-5 py-14 md:mix-blend-difference">
 
         <div class="flex md:justify-evenly flex-col gap-5 md:gap-0 md:flex-row px-5 md:px-0">
 
