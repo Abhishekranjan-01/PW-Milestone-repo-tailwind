@@ -19,15 +19,53 @@ const form = document.querySelector('form');
 
 const formLabels = document.querySelectorAll('form label');
 
-// const subscribeSection = document.querySelector('[data-subscribe-section]');
+const mainH1 = document.querySelector('[data-main-heading]');
+const mainH2 = document.querySelector('main h2');
 
-console.log(form.childNodes);
+const brandName = document.querySelector('[data-brand-name]');
+
+const NavLinks = document.querySelector('main ul');
+
+const HamburgerButton = document.querySelector('[data-menu]');
+
+console.log(NavLinks);
+
+
+// console.log(form.childNodes);
 
 function darkMode(e){
 
     e.classList.toggle('text-black');
     e.classList.toggle('text-yellow-400');
     
+    // Nav Links
+
+    brandName.classList.toggle('text-white');
+    brandName.classList.toggle('text-gray-950');
+    
+    // Nav Links color Above md:
+    NavLinks.classList.toggle('md:text-white');
+    NavLinks.classList.toggle('md:text-gray-950');
+    // Nav Links color below md:
+    NavLinks.classList.toggle('text-black');
+    NavLinks.classList.toggle('text-gray-400');
+    // Nav Bg-Color
+    NavLinks.classList.toggle('bg-gray-200');
+    NavLinks.classList.toggle('bg-gray-900');
+    
+    // Hamburger-Button
+
+    HamburgerButton.classList.toggle('text-black');
+    HamburgerButton.classList.toggle('text-white');
+
+    // Main Heading
+
+    mainH1.classList.toggle('text-white');
+    mainH1.classList.toggle('text-gray-950');
+
+    mainH2.classList.toggle('text-white');
+    mainH2.classList.toggle('text-gray-950');
+
     // Form
     form.classList.toggle('bg-gray-100');
     form.classList.toggle('bg-gray-900');

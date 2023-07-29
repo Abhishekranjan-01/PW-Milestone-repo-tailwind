@@ -34,7 +34,7 @@
 
 
 </head>
-<body class="  font-['Poppins','sans-serif'] ">
+<body class="  font-['Poppins','sans-serif'] bg-black ">
     <!-- Main -->
     <main class=" md:mix-blend-difference flex justify-center h-full w-full ">
         <img class="absolute w-full sm:h-full md:h-full -z-10" src="./assets/background.png" alt="Backgrond Image">
@@ -43,11 +43,11 @@
 
         <!-- Col-1 -->
         <div class="items-end h-fit w-fit">
-            <h1 class="md:block hidden text-white text-2xl lg:text-3xl font-semibold">
+            <h1 data-brand-name="brand-name" class="md:block hidden text-white text-2xl lg:text-3xl font-semibold">
                 BrandName
             </h1>
 
-            <ion-icon class="text-black block md:hidden text-3xl px-2 z-10" name="menu" onclick="Menu(this)"></ion-icon>
+            <ion-icon data-menu="Hamburger-Button" class="text-black block md:hidden text-3xl px-2 z-10" name="menu" onclick="Menu(this)"></ion-icon>
 
         </div>
         <!-- Col-2 -->
@@ -77,7 +77,7 @@
             <!-- Col-1 -->
             <div class="flex flex-col gap-4 md:gap-10 justify-center items-center mt-12 sm:mt-12 lg:w-2/4 md:mt-36">
                 <!--N- Col-1 -->
-                <h1 class=" sm:self-auto text-xl sm:text-3xl md:text-4xl lg:text-6xl text-white font-bold ">Meet the Best Hospital</h1>
+                <h1 data-main-heading="data-main-heading" class="sm:self-auto text-xl sm:text-3xl md:text-4xl lg:text-6xl text-white font-bold">Meet the Best Hospital</h1>
 
                 <!-- Col-2 -->
                 <h2 class="text-white text-sm sm:text-base md:text-lg leading-none">
