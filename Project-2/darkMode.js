@@ -13,15 +13,38 @@ const pricingCards = document.querySelectorAll('[data-pricing_cards]');
 
 const subscribeSection = document.querySelector('[data-subscribe-section]');
 
+const footerP = document.querySelector('[data-footer] p');
+
+const form = document.querySelector('form');
+
+const formLabels = document.querySelectorAll('form label');
+
 // const subscribeSection = document.querySelector('[data-subscribe-section]');
 
-console.log(subscribeSection.childNodes.item(3).childNodes.item(1));
+console.log(form.childNodes);
 
 function darkMode(e){
 
     e.classList.toggle('text-black');
     e.classList.toggle('text-yellow-400');
     
+    // Form
+    form.classList.toggle('bg-gray-100');
+    form.classList.toggle('bg-gray-900');
+
+    // Form Heading (Book Appointment)
+
+    form.childNodes.item(1).classList.toggle('text-gray-900');
+    form.childNodes.item(1).classList.toggle('text-gray-200');
+
+    // Form Labels
+    for(let i=0;i<formLabels.length;i++){
+
+        formLabels[i].classList.toggle('text-gray-900');
+        formLabels[i].classList.toggle('text-gray-400');
+    
+    }
+ 
     //All Sections 
     for(let i=0;i<allSections.length;i++){
         allSections[i].classList.toggle('bg-white');
@@ -99,7 +122,10 @@ function darkMode(e){
     subscribeSection.childNodes.item(3).childNodes.item(1).classList.toggle('text-gray-200');
     subscribeSection.childNodes.item(3).childNodes.item(1).classList.toggle('text-gray-900');
 
-    console.log(subscribeSection.childNodes.item(3).childNodes.item(1));
-    // subscribeSection.classList.toggle('bg-gray-800');
-    // subscribeSection.classList.toggle('bg-gray-black');
+    // footer Paragaraph
+
+    footerP.classList.toggle('text-gray-900');
+    footerP.classList.toggle('text-gray-200');
+
+
 }
