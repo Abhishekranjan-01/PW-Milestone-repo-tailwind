@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hospital Landing Page</title>
+
     <link rel="stylesheet" href="style.css">
     
 
@@ -17,18 +18,28 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
     
-    <!-- Hamburger CDN -->
+    <!-- Hamburger ICON CDN -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
     <!-- Functionality for Hamburger-Menu -->
     <script src="./script.js" defer></script>
+
+    <!-- Some Classes For Dark Mode -->
+
+    <link rel="stylesheet" href="./darkMode.css">
+    
+    <!-- Functionality for Dark Mode -->
+    <script src="./darkMode.js" defer></script>
+
+
 </head>
-<body class=" font-['Poppins','sans-serif'] ">
+<body class="  font-['Poppins','sans-serif'] ">
     <!-- Main -->
-    <main class="flex justify-center h-full w-full">
+    <main class=" md:mix-blend-difference flex justify-center h-full w-full ">
         <img class="absolute w-full sm:h-full md:h-full -z-10" src="./assets/background.png" alt="Backgrond Image">
        <!-- Nav-Bar -->
-        <nav class="fixed flex w-full md:w-4/5 min-[840px]:gap-1 lg:gap-x-14 md:my-4 h-fit z-10">
+        <nav class="fixed flex w-full md:w-4/5 min-[840px]:gap-1 lg:gap-x-14 md:my-4 h-fit z-10 ">
 
         <!-- Col-1 -->
         <div class="items-end h-fit w-fit">
@@ -40,24 +51,29 @@
 
         </div>
         <!-- Col-2 -->
-        <ul data-nav_links="nav_links" class=" text-black md:text-white bg-gray-200 md:bg-transparent text-base lg:text-lg h-screen md:h-fit w-[45vw] md:w-fit absolute md:static opacity-100 hidden md:flex justify-evenly items-center md:items-end flex-col md:flex-row -z-10">
+        <ul data-nav_links="nav_links" class=" text-black md:text-white bg-gray-200 md:bg-transparent text-base lg:text-lg h-screen md:h-fit w-[45vw] md:w-fit absolute md:static opacity-100 hidden md:flex justify-evenly items-center md:items-end flex-col md:flex-row -z-10 ">
 
-            <li class="px-2 min-[800px]:px-3 w-full text-center"><a class="block font-semibold md:font-normal border-b-2 border-dashed border-black md:border-none w-full" href="#"> Home</a></li>
+            <li class="px-2 lg:px-3 w-full text-center"><a class="block font-semibold md:font-normal border-b-2 border-dashed border-black md:border-none w-full" href="#"> Home</a></li>
 
-            <li class="px-2 min-[800px]:px-3 w-full text-center"><a class="block font-semibold md:font-normal border-b-2 border-dashed border-black md:border-none w-full" href="#"> Product</a></li>
+            <li class="px-2 lg:px-3 w-full text-center"><a class="block font-semibold md:font-normal border-b-2 border-dashed border-black md:border-none w-full" href="#"> Product</a></li>
             
-            <li class="px-2 min-[800px]:px-3 w-full text-center"><a class="block font-semibold md:font-normal border-b-2 border-dashed border-black md:border-none w-full" href="#"> Pricing</a></li>
+            <li class="px-2 lg:px-3 w-full text-center"><a class="block font-semibold md:font-normal border-b-2 border-dashed border-black md:border-none w-full" href="#"> Pricing</a></li>
             
             <li class="px-2 min-[800px]:px-3 w-full text-center "><a class="block font-semibold md:font-normal border-b-2 border-dashed border-black md:border-none w-full" href="#"> Contact</a></li>
+
+            <i class="fa-solid fa-sun fa-xl text-white cursor-pointer self-center" onclick="darkMode(this)"></i>
         
         </ul>
+        
+        
+        <button class="bg-sky-400 text-xs md:text-base py-1.5 px-3 md:px-3 md:py-1.5 lg:px-7 lg:py-3 text-white font-semibold rounded-lg absolute right-0 mx-1 my-1 md:my-0 md:mx-0">Get&nbsp;Quote&nbsp;Now&nbsp;<i class="fa-solid fa-arrow-right fa-sm md:ml-1 lg:ml-3 z-50" style="color: #ffffff;"></i></button>
 
-        <button class="bg-sky-400 px-3 text-xs md:text-base py-1.5 md:px-7 md:py-3 text-white font-semibold rounded-lg absolute right-0 mx-1 my-1 md:my-0 md:mx-0">Get&nbsp;Quote&nbsp;Now</button>
+        
         </nav>
 
         <!-- Hero-Section -->
 
-        <div class="flex flex-col justify-between items-center md:flex-row gap-10 md:gap-0 w-4/5 h-full">
+        <div class="flex flex-col justify-between items-center md:flex-row gap-10 md:gap-0 w-4/5 h-full md:min-h-[650px] ">
             <!-- Col-1 -->
             <div class="flex flex-col gap-4 md:gap-10 justify-center items-center mt-12 sm:mt-12 lg:w-2/4 md:mt-36">
                 <!--N- Col-1 -->
@@ -70,7 +86,7 @@
                 
                 <!-- Col-3 -->
                 <div class="flex md:self-start gap-3 ">
-                    <button class="bg-sky-400 text-white font-semibold rounded-3xl px-4 py-2 md:px-8 md:py-4">Get&nbsp;quote&nbsp;Now</button>
+                    <button class="bg-sky-400  text-white font-semibold rounded-3xl px-4 py-2 md:px-8 md:py-4">Get&nbsp;quote&nbsp;Now</button>
 
                     <button class="bg-transparent text-white font-semibold rounded-3xl px-4 py-2 md:px-8 md:py-4 border border-white">Learn&nbsp;More</button>
                 </div>
@@ -79,24 +95,24 @@
 
             <!-- Col-2 -->
             <div class=" flex flex-col items-end justify-center h-full">
-                <form class="bg-gray-800 sm:bg-gray-100 flex flex-col px-6 w-full md:mt-20 rounded-xl" action="">
+                <form class="bg-gray-100 sm:bg-gray-100 flex flex-col px-6 w-full md:mt-20 rounded-xl" action="">
 
-                    <h1 class="text-white sm:text-gray-800 text-center text-semibold text-2xl font-semibold w-full mt-9 mb-4">Book Appointment</h1>
+                    <h1 class="text-gray-900 text-center text-semibold text-2xl font-semibold w-full mt-9 mb-4">Book Appointment</h1>
 
                     <!-- Name -->
-                    <label class="text-white sm:text-gray-800 font-semibold w-4/5 my-2" for="Name">Name*</label>
+                    <label class="text-gray-900 font-semibold w-4/5 my-2" for="Name">Name*</label>
                     
                     <input class="py-2 px-4 rounded-lg bg-gray-200" type="text" name="Name" placeholder="Full Name*">
                 
                 <!-- Email-Address -->
 
-                <label class="text-white sm:text-gray-800 block font-semibold w-full my-2" for="Email">Email address*</label>
+                <label class=" text-gray-900 block font-semibold w-full my-2" for="Email">Email address*</label>
                     
                 <input class="py-2 px-4 rounded-lg bg-gray-200" class="w-full" type="email" name="Email" placeholder="example@gmail.com">
 
                 <!-- Department -->
 
-                <label class="text-white sm:text-gray-800 block font-semibold w-full my-2" for="Department">Department*</label>
+                <label class=" text-gray-900 block font-semibold w-full my-2" for="Department">Department*</label>
 
                 <select class="py-2 px-4 rounded-lg bg-gray-200" name="Department" id="Department">
                     <option value="">-- Please Select --</option>
@@ -112,7 +128,7 @@
 
                 <!-- Time -->
 
-                <label class="text-white sm:text-gray-800 block font-semibold w-full my-2" for="Department">Time*</label>
+                <label class=" text-gray-900 block font-semibold w-full my-2" for="Department">Time*</label>
 
                 <select class="py-2 px-4 rounded-lg bg-gray-200" name="Time" id="Department">
                     <option value="">-- Please Select --</option>
@@ -133,8 +149,8 @@
         </div>
     </main>
 
-    <!-- Heading Section -->
-    <section class="bg-white flex justify-center flex-col gap-20 mt-24 md:mt-16 px-5 ">
+    <!-- Heading Section (Leading-Medicine) -->
+    <section class="bg-white flex justify-center flex-col gap-20 pb-14 pt-24 md:pt-16 px-5">
         <!-- Leading Medicine -->
         <div class="md:mt-10 flex justify-center flex-col gap-5 items-center px-5 md:px-0">
             <h1 class="text-2xl lg:text-3xl text-center font-semibold text-gray-900">Leading Medicine</h1>
@@ -145,10 +161,10 @@
 
         <!-- Card Section -->
 
-        <div class="flex justify-center items-center flex-col md:flex-row gap-4">
+        <div data-features-cards="features-cards" class="flex justify-center items-center flex-col md:flex-row gap-4">
            
             <!-- Card-1 -->
-            <div class="border rounded-lg w-fit text-sm md:text-base text-gray-500 hover:text-gray-700 hover:scale-105 shadow-md hover:shadow-lg transition-all ease-in duration-200 ">
+            <div class=" bg-white border rounded-lg w-fit text-sm md:text-base text-gray-500 hover:text-gray-700 hover:scale-105 shadow-md hover:shadow-lg transition-all ease-in duration-200 ">
                 <!-- Part-1 (blue) -->
                 <div class="bg-blue-400 px-6 py-5 flex rounded-md
                 flex-row gap-5">
@@ -158,7 +174,7 @@
                 </div>
                 <!-- Part-2 (About-Features) -->
                 <div>
-                    <ul class="font-semibold flex flex-col gap-2 px-8 py-8 rounded-md border border-sky-200 ">
+                    <ul class=" font-semibold flex flex-col gap-2 px-8 py-8 rounded-md border border-sky-200 ">
                         <li class="before:content-['-'] -indent-3"> The best products start with Figma</li>
                         <li class="before:content-['-'] -indent-3"> Design with real data</li>
                         <li class="before:content-['-'] -indent-3"> Lightning fast prototype</li>
@@ -173,7 +189,7 @@
 
 
                <!-- Card-2 -->
-               <div class="border rounded-lg w-fit text-sm md:text-base text-gray-500 hover:text-gray-700 hover:scale-105 shadow-md hover:shadow-lg transition-all ease-in duration-200 ">
+               <div class="bg-white border rounded-lg w-fit text-sm md:text-base text-gray-500 hover:text-gray-700 hover:scale-105 shadow-md hover:shadow-lg transition-all ease-in duration-200 ">
                 <!-- Part-1 (blue) -->
                 <div class="bg-blue-400 px-6 py-5 flex rounded-md
                 flex-row gap-5">
@@ -198,7 +214,7 @@
 
 
                <!-- Card-3 -->
-               <div class="border rounded-lg w-fit text-sm md:text-base text-gray-500 hover:text-gray-700 hover:scale-105 shadow-md hover:shadow-lg transition-all ease-in duration-200 ">
+               <div class="bg-white border rounded-lg w-fit text-sm md:text-base text-gray-500 hover:text-gray-700 hover:scale-105 shadow-md hover:shadow-lg transition-all ease-in duration-200 ">
                 <!-- Part-1 (blue) -->
                 <div class="bg-blue-400 px-6 py-5 flex rounded-md
                 flex-row gap-5">
@@ -222,9 +238,9 @@
         </div>
     </section>
 
-    <!-- Again Heading Section -->
+    <!-- Again Heading Section (Leading-Medicine) & (Review Seciton)-->
 
-    <section class="bg-gray-100 flex justify-center flex-col gap-20 mt-24 md:mt-16 px-5 py-14 ">
+    <section  class="bg-white flex justify-center flex-col gap-20 pt-24 md:pt-16 px-5 py-14">
         <!-- Heading & Caption -->
         <div class="md:mt-10 flex justify-center flex-col gap-5 items-center px-5 md:px-0">
             <h1 class="text-2xl lg:text-3xl text-center font-semibold text-gray-900">Leading Medicine</h1>
@@ -235,7 +251,7 @@
 
         <!-- Card-Section -->
 
-        <div class="flex justify-center items-center flex-col md:flex-row gap-4 py-4">
+        <div data-review-section="review-section" class=" flex justify-center items-center flex-col md:flex-row gap-4 py-4">
             
             <!-- Card-1 -->
             <div class="bg-white shadow-lg hover:shadow-xl flex flex-col gap-5 border rounded-lg w-fit md:w-1/4 px-6 py-6 text-gray-500 text-sm md:text-base  font-semibold hover:text-gray-700 hover:scale-105 transition-all ease-in duration-200 ">
@@ -268,16 +284,13 @@
                 <img class="w-10" src="./assets/user3.png" alt="User-1">
              
             </div>
-            
-            <div></div>
-            <div></div>
         
         </div>
     </section>
 
     <!-- FAQ CAPTION Section -->
 
-    <section class="flex justify-center flex-col gap-20 mt-24 md:mt-16 px-5 pb-20 ">
+    <section class="bg-white flex justify-center flex-col gap-20 pt-24 md:pt-16 px-5 pb-20 ">
 
          <!-- Heading & Caption -->
          <div class="md:mt-10 flex justify-center flex-col gap-5 items-center px-5 md:px-0">
@@ -290,17 +303,18 @@
         <!-- Card-section -->
 
         
-        <div class="flex flex-wrap flex-col md:flex-row justify-center items-center gap-x-20 gap-y-14">
+        <div data-faq-card="Faq-Cards" class="flex flex-wrap flex-col md:flex-row justify-center items-center gap-x-20 gap-y-14">
             
             <!-- Card-1 -->
             <div class="flex flex-col gap-1  md:w-1/4 md:max-w-[280px]">
                 <div class="flex flex-row gap-4">
                     <i class="fa-light fa-greater-than fa-2xl mt-3" style="color: #26d2fd;"></i>    
-                    <h1 class="font-semibold self-start">the quick fox jumps over the lazy dog</h1>
+
+                    <h2 class="font-semibold self-start">the quick fox jumps over the lazy dog</h2>
                 </div>
                 
 
-                <p class="font-semibold text text-gray-500 ml-9">Things on a very small scale behave like nothing</p>
+                <p class="font-semibold  text-gray-500 ml-9">Things on a very small scale behave like nothing</p>
             
             </div>
 
@@ -311,7 +325,7 @@
             <div class="flex flex-col gap-1  md:w-1/4 md:max-w-[280px]">
                 <div class="flex flex-row gap-4">
                     <i class="fa-light fa-greater-than fa-2xl mt-3" style="color: #26d2fd;"></i>    
-                    <h1 class="font-semibold self-start">the quick fox jumps over the lazy dog</h1>
+                    <h2 class="font-semibold self-start">the quick fox jumps over the lazy dog</h2>
                 </div>
 
                 <p class="font-semibold text text-gray-500 ml-9">Things on a very small scale behave like nothing</p>
@@ -322,7 +336,7 @@
             <div class="flex flex-col gap-1  md:w-1/4 md:max-w-[280px]">
                 <div class="flex flex-row gap-4">
                     <i class="fa-light fa-greater-than fa-2xl mt-3" style="color: #26d2fd;"></i>    
-                    <h1 class="font-semibold self-start">the quick fox jumps over the lazy dog</h1>
+                    <h2 class="font-semibold self-start">the quick fox jumps over the lazy dog</h2>
                 </div>
 
                 <p class="font-semibold text text-gray-500 ml-9">Things on a very small scale behave like nothing</p>
@@ -335,7 +349,7 @@
             <div class="flex flex-col gap-1  md:w-1/4 md:max-w-[280px]">
                 <div class="flex flex-row gap-4">
                     <i class="fa-light fa-greater-than fa-2xl mt-3" style="color: #26d2fd;"></i>    
-                    <h1 class="font-semibold self-start">the quick fox jumps over the lazy dog</h1>
+                    <h2 class="font-semibold self-start">the quick fox jumps over the lazy dog</h2>
                 </div>
 
                 <p class="font-semibold text text-gray-500 ml-9">Things on a very small scale behave like nothing</p>
@@ -348,7 +362,7 @@
             <div class="flex flex-col gap-1  md:w-1/4 md:max-w-[280px]">
                 <div class="flex flex-row gap-4">
                     <i class="fa-light fa-greater-than fa-2xl mt-3" style="color: #26d2fd;"></i>    
-                    <h1 class="font-semibold self-start">the quick fox jumps over the lazy dog</h1>
+                    <h2 class="font-semibold self-start">the quick fox jumps over the lazy dog</h2>
                 </div>
 
                 <p class="font-semibold text text-gray-500 ml-9">Things on a very small scale behave like nothing</p>
@@ -361,7 +375,7 @@
             <div class="flex flex-col gap-1  md:w-1/4 md:max-w-[280px]">
                 <div class="flex flex-row gap-4">
                     <i class="fa-light fa-greater-than fa-2xl mt-3" style="color: #26d2fd;"></i>    
-                    <h1 class="font-semibold self-start">the quick fox jumps over the lazy dog</h1>
+                    <h2 class="font-semibold self-start">the quick fox jumps over the lazy dog</h2>
                 </div>
 
                 <p class="font-semibold text text-gray-500 ml-9">Things on a very small scale behave like nothing</p>
@@ -374,7 +388,7 @@
             <div class="flex flex-col gap-1  md:w-1/4 md:max-w-[280px]">
                 <div class="flex flex-row gap-4">
                     <i class="fa-light fa-greater-than fa-2xl mt-3" style="color: #26d2fd;"></i>    
-                    <h1 class="font-semibold self-start">the quick fox jumps over the lazy dog</h1>
+                    <h2 class="font-semibold self-start">the quick fox jumps over the lazy dog</h2>
                 </div>
 
                 <p class="font-semibold text text-gray-500 ml-9">Things on a very small scale behave like nothing</p>
@@ -387,7 +401,7 @@
             <div class="flex flex-col gap-1  md:w-1/4 md:max-w-[280px]">
                 <div class="flex flex-row gap-4">
                     <i class="fa-light fa-greater-than fa-2xl mt-3" style="color: #26d2fd;"></i>    
-                    <h1 class="font-semibold self-start">the quick fox jumps over the lazy dog</h1>
+                    <h2 class="font-semibold self-start">the quick fox jumps over the lazy dog</h2>
                 </div>
 
                 <p class="font-semibold text text-gray-500 ml-9">Things on a very small scale behave like nothing</p>
@@ -400,7 +414,7 @@
             <div class="flex flex-col gap-1  md:w-1/4 md:max-w-[280px]">
                 <div class="flex flex-row gap-4">
                     <i class="fa-light fa-greater-than fa-2xl mt-3" style="color: #26d2fd;"></i>    
-                    <h1 class="font-semibold self-start">the quick fox jumps over the lazy dog</h1>
+                    <h2 class="font-semibold self-start">the quick fox jumps over the lazy dog</h2>
                 </div>
 
                 <p class="font-semibold text text-gray-500 ml-9">Things on a very small scale behave like nothing</p>
@@ -412,7 +426,7 @@
 
     <!-- Pricing Section -->
 
-    <section class="bg-gray-100 flex justify-center flex-col gap-20 mt-24 md:mt-16 px-5 py-14 ">
+    <section class="bg-gray-white flex justify-center flex-col gap-20 pt-24 md:pt-16 px-5 py-14 md:mix-blend-difference">
 
          <!-- Heading & Caption -->
          <div class="md:mt-10 flex justify-center flex-col gap-5 items-center px-5 md:px-0">
@@ -499,7 +513,7 @@
                         <h2 class="text-gray-500 font-semibold text-center w-4/6">organize across all apps by hand</h2>
 
                         <div class="flex">
-                            <h2 class="text-5xl text-sky-500 font-semibold">0</h2>
+                            <h2 class="text-5xl text-sky-500 font-semibold">9.99</h2>
                         
                             <div class="flex flex-col">
                             <sup class="text-lg font-bold text-sky-500 ml-3 mt-1">$</sup><sub class="text-sky-300 text-base font-semibold ml-3 relative -top-2">Per Month</sub>
@@ -532,7 +546,7 @@
                         </li>
 
                         <li class=" flex gap-2 h-full flex-row">
-                            <i class="fa-sharp fa-solid fa-circle-check fa-2xl  h-fit self-center" style="color: #979797;"></i>
+                            <i class="fa-sharp fa-solid fa-circle-check fa-2xl  h-fit self-center" style="color: #37b346;"></i>
                         
                             <h4 class="font-semibold text-sm md:text-base">1GB Cloud Storage</h4>
                         </li>
@@ -561,7 +575,7 @@
                         <h2 class="text-gray-500 font-semibold text-center w-4/6">organize across all apps by hand</h2>
 
                         <div class="flex">
-                            <h2 class="text-5xl text-sky-500 font-semibold">0</h2>
+                            <h2 class="text-5xl text-sky-500 font-semibold">19.99</h2>
                         
                             <div class="flex flex-col">
                             <sup class="text-lg font-bold text-sky-500 ml-3 mt-1">$</sup><sub class="text-sky-300 text-base font-semibold ml-3 relative -top-2">Per Month</sub>
@@ -594,13 +608,13 @@
                         </li>
 
                         <li class=" flex gap-2 h-full flex-row">
-                            <i class="fa-sharp fa-solid fa-circle-check fa-2xl  h-fit self-center" style="color: #979797;"></i>
+                            <i class="fa-sharp fa-solid fa-circle-check fa-2xl  h-fit self-center" style="color: #37b346;;"></i>
                         
                             <h4 class="font-semibold text-sm md:text-base">1GB Cloud Storage</h4>
                         </li>
 
                         <li class=" flex gap-2 h-full flex-row">
-                            <i class="fa-sharp fa-solid fa-circle-check fa-2xl  h-fit self-center" style="color: #979797;"></i>
+                            <i class="fa-sharp fa-solid fa-circle-check fa-2xl  h-fit self-center" style="color: #37b346;"></i>
                         
                             <h4 class="font-semibold text-sm md:text-base">Email and community support</h4>
                         </li>
@@ -617,7 +631,7 @@
 
     <!-- Subscribe-Section -->
 
-    <section class="bg-gray-800 flex flex-col md:flex-row justify-evenly justify-items-center items-center gap-20 py-14" >
+    <section class="bg-gray-800 flex flex-col md:flex-row justify-evenly justify-items-center items-center gap-20 py-14 md:mix-blend-difference" >
 
         <!-- Col-1 -->
         <div class=" w-3/5 md:w-[37%]">
@@ -635,7 +649,79 @@
 
     </section>
 
+    <!-- Footer Section -->
 
+    <section class="bg-white flex justify-center flex-col gap-20 px-5 py-14 md:mix-blend-difference">
+
+        <div class="flex md:justify-evenly flex-col gap-5 md:gap-0 md:flex-row px-5 md:px-0">
+
+            <!-- Col-1 -->
+            <div class="flex flex-col gap-7">
+                <h1 class="text-gray-900 font-bold text-2xl">
+                    Get In Touch
+                </h1>
+
+                <p class="font-semibold md:w-4/5">The quick fox jumps over the lazy dog</p>
+
+                <div class="flex flex-row gap-5">
+                    <i class="fa-brands fa-facebook fa-xl text-sky-400" ></i>
+
+                    <i class="fa-brands fa-instagram fa-xl text-sky-400"></i>
+
+                    <i class="fa-brands fa-twitter fa-xl text-sky-400"></i>
+
+                </div>
+            </div>
+
+            <!-- Col-2 -->
+            <div class="flex flex-col max-sm:mt-4 gap-1 md:gap-5">
+                <h1 class="text-gray-900 font-bold text-2xl">
+                    Company info
+                </h1>
+
+                <ul class="flex flex-col gap-1 md:gap-5">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Carrier</a> </li>
+                    <li><a href="#">We are hiring</a> </li>
+                    <li><a href="#">Blog</a> </li>
+                </ul>
+                
+            </div>
+
+             <!-- Col-3 -->
+             <div class="flex flex-col gap-1 md:gap-5">
+                <h1 class="text-gray-900 font-bold text-2xl">
+                    Features
+                </h1>
+
+                <ul class="flex flex-col gap-1 md:gap-5">
+                    <li><a href="#">Business Marketing</a></li>
+                    <li><a href="#">User Analytic</a> </li>
+                    <li><a href="#">Live Chat</a> </li>
+                    <li><a href="#">Unlimited Support</a> </li>
+                </ul>
+                
+            </div>
+
+            <!-- Col-4 -->
+            <div class="flex flex-col gap-5">
+                <h1 class="text-gray-900 font-bold text-2xl">
+                    Resources
+                </h1>
+
+                <ul class="flex flex-col gap-1 md:gap-5">
+                    <li><a href="#">IOS & Android</a></li>
+                    <li><a href="#">Watch a Demo</a> </li>
+                    <li><a href="#">Customers</a> </li>
+                    <li><a href="#">API</a> </li>
+                </ul>
+                
+            </div>
+
+
+        </div>
+
+    </section>
 
 </body>
 </html>
