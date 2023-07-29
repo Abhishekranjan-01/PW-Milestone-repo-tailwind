@@ -1,5 +1,4 @@
 const allSections = document.querySelectorAll('section');
-
 const allh1 = document.querySelectorAll('section h1');
 
 const alla =document.querySelectorAll('section li a');
