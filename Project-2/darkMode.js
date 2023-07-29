@@ -9,11 +9,13 @@ const reviewCards = document.querySelectorAll('[data-review-section] > div');
 
 const faqCards = document.querySelectorAll('[data-faq-card] > div');
 
+const pricingCards = document.querySelectorAll('[data-pricing_cards]');
+
 // const reviewCardsParagraph = document.querySelectorAll('[data-review-section] > div >p');
 
 // console.log(faqCards[0].childNodes.item(1).childNodes.item(3));
 
-console.log(faqCards[0].childNodes.item(3));
+// console.log(pricingCards[0].childNodes.item(3).childNodes.item(1));
 
 
 function darkMode(e){
@@ -66,14 +68,22 @@ function darkMode(e){
     }
 
     for(let i =0;i<faqCards.length;i++){
-        // faqCards[i].classList.toggle('text-gray-200');
 
         faqCards[i].childNodes.item(1).childNodes.item(3).classList.toggle('text-gray-200');
-        // faqCards[i].childNodes.item(1).childNodes.item(3).classList.toggle('text-gray-900');
-
         faqCards[0].childNodes.item(3).classList.toggle('[text-gray-400]');
-        // faqCards[i].childNodes.item(1).childNodes.item(4).classList.toggle('text-gray-400');
- 
-        console.log(faqCards[0].childNodes.item(1).childNodes.item(3));
+
+    }
+
+    for(let i=0;i<pricingCards.length;i++){
+
+        pricingCards[i].classList.toggle('bg-white');
+        pricingCards[i].classList.toggle('bg-gray-900');
+
+        pricingCards[i].childNodes.item(3).childNodes.item(1).classList.toggle('text-gray-900');
+
+        pricingCards[i].childNodes.item(3).childNodes.item(1).classList.toggle('text-gray-200');
+    
+        pricingCards[i].classList.toggle('text-gray-900');
+        pricingCards[i].classList.toggle('text-gray-400');
     }
 }
