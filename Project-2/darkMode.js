@@ -11,12 +11,11 @@ const faqCards = document.querySelectorAll('[data-faq-card] > div');
 
 const pricingCards = document.querySelectorAll('[data-pricing_cards]');
 
-// const reviewCardsParagraph = document.querySelectorAll('[data-review-section] > div >p');
+const subscribeSection = document.querySelector('[data-subscribe-section]');
 
-// console.log(faqCards[0].childNodes.item(1).childNodes.item(3));
+// const subscribeSection = document.querySelector('[data-subscribe-section]');
 
-// console.log(pricingCards[0].childNodes.item(3).childNodes.item(1));
-
+console.log(subscribeSection.childNodes.item(3).childNodes.item(1));
 
 function darkMode(e){
 
@@ -67,13 +66,20 @@ function darkMode(e){
         console.log("Cards");
     }
 
+    // FAQ Cards
     for(let i =0;i<faqCards.length;i++){
 
+        faqCards[i].classList.toggle('bg-gray-900');
+        
         faqCards[i].childNodes.item(1).childNodes.item(3).classList.toggle('text-gray-200');
-        faqCards[0].childNodes.item(3).classList.toggle('[text-gray-400]');
+        faqCards[i].childNodes.item(3).classList.toggle('[text-gray-400]');
+
+        
 
     }
 
+    //Pricing Cards 
+    
     for(let i=0;i<pricingCards.length;i++){
 
         pricingCards[i].classList.toggle('bg-white');
@@ -86,4 +92,14 @@ function darkMode(e){
         pricingCards[i].classList.toggle('text-gray-900');
         pricingCards[i].classList.toggle('text-gray-400');
     }
+    // Subscribe-Section
+    subscribeSection.classList.toggle('bg-black');
+    subscribeSection.classList.toggle('bg-white');
+
+    subscribeSection.childNodes.item(3).childNodes.item(1).classList.toggle('text-gray-200');
+    subscribeSection.childNodes.item(3).childNodes.item(1).classList.toggle('text-gray-900');
+
+    console.log(subscribeSection.childNodes.item(3).childNodes.item(1));
+    // subscribeSection.classList.toggle('bg-gray-800');
+    // subscribeSection.classList.toggle('bg-gray-black');
 }
