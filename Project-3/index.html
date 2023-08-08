@@ -25,7 +25,7 @@
 <body class="bg-white relative">
 
     <!-- Nav-Bar -->
-    <nav class="bg-white flex justify-between px-4 md:px-8 py-2 md:py-4 fixed top-0 w-full md:border-b shadow-sm ">
+    <nav class="bg-white flex justify-between px-4 md:px-8 py-2 md:py-4 fixed top-0 w-full md:border-b shadow-sm z-10">
         <!-- Company LOGO -->
         <img class="hidden md:block" src="./assets/logo.png" alt="Logo">
         <!-- Hamburger Icon On for Screens Below than MD: -->
@@ -100,39 +100,71 @@
     <!-- Summerised Specs -->
 
     <section class="flex max-md:flex-col justify-evenly items-center  w-full my-12 max-md:gap-5">
-        <!-- 1 -->
+        <!-- Card- 1 -->
         <div class="flex flex-col justify-center items-center border rounded-lg shadow-xl hover:scale-110 transition-all duration-200 ease-in px-10 pt-7 pb-4">
             <div><h1 class="text-4xl font-['Poppins','sans-serif'] font-bold text-[#42454A]">105<span class="text-xl ml-3  font-semibold">lbs</span></h1></div>
             <h2 class="text-sm font-['Poppins','sans-serif'] font-semibold text-[#42454A] py-3">Net Weight</h2>
         </div>
-        <!-- 2 -->
+        <!-- Card- 2 -->
         <div class="flex flex-col justify-center items-center border rounded-lg shadow-xl hover:scale-110 transition-all duration-200 ease-in px-10 pt-7 pb-4">
             <div><h1 class="text-4xl font-['Poppins','sans-serif'] font-bold text-[#42454A]">26<span class="text-xl ml-3  font-semibold">mph</span></h1></div>
             <h2 class="text-sm font-['Poppins','sans-serif'] font-semibold text-[#42454A] py-3">Top Speed</h2>
         </div>
-        <!-- 3 -->
+        <!-- Card- 3 -->
         <div class="flex flex-col justify-center items-center border rounded-lg shadow-xl hover:scale-110 transition-all duration-200 ease-in px-9 pt-7 pb-4">
             <div><h1 class="text-4xl font-['Poppins','sans-serif'] font-bold text-[#42454A]">38<span class="text-xl ml-3  font-semibold">miles</span></h1></div>
             <h2 class="text-sm font-['Poppins','sans-serif'] font-semibold text-[#42454A] py-3">Max Range</h2>
         </div>
-        <!-- 4 -->
+        <!-- Card- 4 -->
         <div class="flex flex-col justify-center items-center border rounded-lg shadow-xl hover:scale-110 transition-all duration-200 ease-in px-12 pt-7 pb-4">
             <div><h1 class="text-4xl font-['Poppins','sans-serif'] font-bold text-[#42454A]">89<span class="text-xl ml-3  font-semibold">nm</span></h1></div>
             <h2 class="text-sm font-['Poppins','sans-serif'] font-semibold text-[#42454A] py-3">Max Torques</h2>
         </div>
 
-        <!-- 5 -->
+        <!-- Card- 5 -->
 
         <div class="flex flex-col justify-center items-center border rounded-lg shadow-xl hover:scale-110 transition-all duration-200 ease-in px-6 pt-7 pb-4">
             <div><h1 class="text-4xl font-['Poppins','sans-serif'] font-bold text-[#42454A]">22%<span class="text-xl ml-3  font-semibold">slope</span></h1></div>
             <h2 class="text-sm font-['Poppins','sans-serif'] font-semibold text-[#42454A] py-3">Hill Climbing</h2>
         </div>
 
-        <!-- 6 -->
+        <!-- Card- 6 -->
 
         <div class="flex flex-col justify-center items-center border rounded-lg shadow-xl hover:scale-110 transition-all duration-200 ease-in px-5 pt-7 pb-4">
             <div><h1 class="text-4xl font-['Poppins','sans-serif'] font-bold text-[#42454A]">2<span class="text-3xl font-semibold">x</span></h1></div>
             <h2 class="text-sm font-['Poppins','sans-serif'] font-semibold text-[#42454A] py-3">Hydralic disc Brakes</h2>
+        </div>
+    </section>
+    <!-- Product Information -->
+    <section class="font-['Poppins','serif'] grid grid-rows-[1fr_1fr] gap-5 h-[930px] ">
+
+        <!-- Row-1 -->
+        <div class="flex justify-center pl-9 max-md:pl-4 max-md:pr-3 h-fit">
+            <div>
+                <h1 class="text-center text-5xl font-semibold mt-14 text-[#42454A]">Product Information</h1>
+                <p class="text-[#42454A] text-lg mt-10">Our Scooter has following unique design and technology features:</p>
+            </div>
+        </div>
+        
+        <!-- Row- 2 -->
+        <div class="flex max-md:flex-col items-center justify-between h-fit">
+            <div>
+                <img class="w-full" src="./assets/product information image.png" alt="Product-Information Image">
+            </div>
+
+            <div class="flex justify-center items-center w-1/2 ">
+                <ul class=" flex flex-col text-[#42454A] text-sm md:text-lg">
+                    <!-- 1 -->
+                    <li class="list-image-[url('./assets/Icon.png')] my-2 md:my-3"> <span class="relative bottom-5 max-[612px]:bottom-8">Lightweight aircraft grade aluminium frame</span> 
+                    </li>
+                    <!-- 2 -->
+                    <li class="list-image-[url('./assets/Icon.png')] my-3"> <span class="relative bottom-5 max-[355px]:bottom-8">Car grade lithium battery</span> </li>
+                    <li class="list-image-[url('./assets/Icon.png')] my-3"> <span class="relative bottom-5">Self-balanced</span> </li>
+                    <li class="list-image-[url('./assets/Icon.png')] my-3"> <span class="relative bottom-5">Plug n play</span> </li>
+                    <li class="list-image-[url('./assets/Icon.png')] my-3"> <span class="relative bottom-5">Quick release adapter</span> </li>
+                    <li class="list-image-[url('./assets/Icon.png')] my-3"> <span class="relative bottom-5">RFID  key card</span> </li>
+                </ul>
+            </div>
         </div>
     </section>
 </body>
