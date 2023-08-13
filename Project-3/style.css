@@ -538,6 +538,10 @@ video {
   position: fixed;
 }
 
+.absolute {
+  position: absolute;
+}
+
 .relative {
   position: relative;
 }
@@ -564,6 +568,110 @@ video {
 
 .top-8 {
   top: 2rem;
+}
+
+.bottom-96 {
+  bottom: 24rem;
+}
+
+.top-96 {
+  top: 24rem;
+}
+
+.-top-10 {
+  top: -2.5rem;
+}
+
+.-top-20 {
+  top: -5rem;
+}
+
+.-top-40 {
+  top: -10rem;
+}
+
+.-top-44 {
+  top: -11rem;
+}
+
+.right-0 {
+  right: 0px;
+}
+
+.-right-0 {
+  right: -0px;
+}
+
+.-left-0 {
+  left: -0px;
+}
+
+.right-6 {
+  right: 1.5rem;
+}
+
+.right-10 {
+  right: 2.5rem;
+}
+
+.right-60 {
+  right: 15rem;
+}
+
+.right-52 {
+  right: 13rem;
+}
+
+.right-40 {
+  right: 10rem;
+}
+
+.right-16 {
+  right: 4rem;
+}
+
+.right-12 {
+  right: 3rem;
+}
+
+.right-20 {
+  right: 5rem;
+}
+
+.bottom-10 {
+  bottom: 2.5rem;
+}
+
+.bottom-20 {
+  bottom: 5rem;
+}
+
+.bottom-16 {
+  bottom: 4rem;
+}
+
+.bottom-24 {
+  bottom: 6rem;
+}
+
+.bottom-28 {
+  bottom: 7rem;
+}
+
+.bottom-\[100px\] {
+  bottom: 100px;
+}
+
+.bottom-\[104px\] {
+  bottom: 104px;
+}
+
+.bottom-\[102px\] {
+  bottom: 102px;
+}
+
+.right-14 {
+  right: 3.5rem;
 }
 
 .z-10 {
@@ -662,6 +770,10 @@ video {
   height: 100%;
 }
 
+.h-28 {
+  height: 7rem;
+}
+
 .w-1\/2 {
   width: 50%;
 }
@@ -677,6 +789,10 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-screen {
+  width: 100vw;
 }
 
 .list-image-\[url\(\'\.\/assets\/Icon\.png\'\)\] {
@@ -787,6 +903,18 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-\[url\(\'\.\/assets\/gallery-scooter\.png\'\)\] {
+  background-image: url('./assets/gallery-scooter.png');
+}
+
+.bg-cover {
+  background-size: cover;
+}
+
+.bg-no-repeat {
+  background-repeat: no-repeat;
+}
+
 .px-10 {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
@@ -870,6 +998,10 @@ video {
   font-family: 'Poppins','serif';
 }
 
+.font-\[\'Montserrat\'\2c \'serif\'\] {
+  font-family: 'Montserrat','serif';
+}
+
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -910,6 +1042,16 @@ video {
   line-height: 1.75rem;
 }
 
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
+}
+
+.text-8xl {
+  font-size: 6rem;
+  line-height: 1;
+}
+
 .font-\[350\] {
   font-weight: 350;
 }
@@ -948,6 +1090,22 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.opacity-5 {
+  opacity: 0.05;
+}
+
+.opacity-40 {
+  opacity: 0.4;
+}
+
+.opacity-50 {
+  opacity: 0.5;
+}
+
+.opacity-60 {
+  opacity: 0.6;
 }
 
 .shadow-md {
@@ -1158,6 +1316,22 @@ video {
 
   .md\:hidden {
     display: none;
+  }
+
+  .md\:h-4\/5 {
+    height: 80%;
+  }
+
+  .md\:h-1\/4 {
+    height: 25%;
+  }
+
+  .md\:h-full {
+    height: 100%;
+  }
+
+  .md\:h-72 {
+    height: 18rem;
   }
 
   .md\:w-1\/2 {
