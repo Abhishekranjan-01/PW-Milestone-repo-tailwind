@@ -6,37 +6,36 @@
     <title>Project-4</title>
     <link rel="stylesheet" href="style.css">
 
+    <!-- Styles For Hamburger And SideBar Menu For Small Screen -->
     <link rel="stylesheet" href="./hamburger.css">
 
-    <link rel="stylesheet" href="./magic.css">
-
-    <!-- <link rel="stylesheet" href="./magic.min.css"> -->
-
-
+    <!-- Functionality For Hamburger And SideBar Menu -->
     <script src="./hamburger.js" defer></script>
 </head>
 <body>
-    <nav class="border-b-2 border-b-[#fff] fixed top-0 w-full flex md:flex-row justify-between items-center px-10 py-3" >
+
+    <!-- NavBar -->
+    <nav class="border-b-2 border-b-[#fff] fixed top-0 w-full flex md:flex-row justify-between items-center px-5 md:px-10 py-3" >
         <img class="max-md:hidden" src="./assets/logo.png" alt="Logo"/>
              
-            <div data-hamButton = 'hamburger Button' class="z-10 block md:hidden -ml-10">
+            <div  data-hamButton = 'hamburger Button' class="z-10 self-center block md:hidden -ml-5">
 
-                <input type="checkbox" role="button" aria-label="Display the menu" class="menu">
+                <input  type="checkbox" role="button" aria-label="Display the menu" class="menu ">
             
             </div>
-            <!-- St--1 -->
-       <ul class="magictime ease-in-out duration-500 max-md:w-[45vw] flex items-center max-md:flex-col max-md:justify-evenly max-md:h-screen max-md:absolute max-sm:-left-40 md:-left-80 top-0 max-md:bg-gray-950">
-
-   
-
+            <!-- Nav Links -->
+       <ul class="max-md:w-[45vw] flex items-center max-md:flex-col max-md:justify-evenly max-md:h-screen max-md:absolute left-0 top-0 ease-in-out max-md:bg-gray-950 max-md:-translate-x-full transition-all duration-500">
 
         <li class="px-4 text-gray-200"><a href="#">MARKETPLACE</a></li>
         <li class="px-4 text-gray-200"><a href="#">ABOUT</a></li> 
         <li class="px-4 text-gray-200"><a href="#">RESOURCES</a></li> 
         <li class="px-4 text-gray-200"><a href="#">FAQ</a></li> 
        </ul>
+       <!-- Buttons -->
         <div>
+            <!-- Login Button -->
             <button class="bg-[#1C1727] text-gray-200 border-2 px-4 py-1" style="border-image: linear-gradient(120deg, rgba(63,167,242,1) 0%, rgba(168,49,253,1) 100%) 1;">Log In</button>
+            <!-- SignUp Button -->
             <button class="bg-[#1C1727] text-gray-200 border-2 px-4 py-1" style="border-image: linear-gradient(120deg, rgba(63,167,242,1) 0%, rgba(168,49,253,1) 100%) 1;">Sign Up</button>
         </div>
     </nav>
