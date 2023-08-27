@@ -15,7 +15,7 @@
 <body>
 
     <!-- NavBar -->
-    <nav class="border-b-2 border-b-[#fff] fixed top-0 w-full flex md:flex-row justify-between items-center px-5 md:px-10 py-3" >
+    <nav class=" border-b-2 border-b-[#fff] fixed top-0 w-full flex md:flex-row justify-between items-center px-5 md:px-10 py-3 backdrop-blur-lg" >
         <img class="max-md:hidden" src="./assets/logo.png" alt="Logo"/>
              
             <div  data-hamButton = 'hamburger Button' class="z-10 self-center block md:hidden -ml-5">
@@ -40,11 +40,29 @@
         </div>
     </nav>
 
-    <main class="h-screen" style="background : linear-gradient(120deg, rgba(212,101,252,1) 0%, rgba(76,32,180,1) 14%, rgba(25,16,47,1) 30%)">
-        <h1>1-1</h1>
-        <h1>2-1</h1>
-        <h1>3-1</h1>
-        <h1>4-1</h1>
+    <main class="h-screen
+    flex flex-row
+    " style="background : linear-gradient(120deg, rgba(212,101,252,1) 0%, rgba(76,32,180,1) 14%, rgba(25,16,47,1) 30%)">
+    <!-- Row-1 -->
+    <div class="flex flex-col w-[55%] gap-16 px-16">
+<!-- #D2ACFF  #8773D2 -->
+        <h1 class="font-mono text-6xl mt-28" style="background: -webkit-linear-gradient( #D2ACFF, #8773D2);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;">Keep Calm & <br> Collect Your NFTs.</h1>
+
+        <p class="text-gray-200">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias sequi quo, ea incidunt animi qui expedita soluta? Cumque nemo dignissimos, suscipit mollitia maiores ratione molestias iste repudiandae. Aliquam, aspernatur ab.</p>
+
+        <div>
+
+        </div>
+
+    </div>
+    <!-- Row-2 -->
+    <div class="w-[45%] flex justify-center items-center">
+        <img class="w-4/5" src="./assets/image.png" alt="Hand">
+    </div>
+
     </main>
 </body>
 </html>
