@@ -6,6 +6,9 @@
     <title>Project-4</title>
     <link rel="stylesheet" href="style.css">
 
+    <!-- Font - Awesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- Styles For Hamburger And SideBar Menu For Small Screen -->
     <link rel="stylesheet" href="./hamburger.css">
 
@@ -34,14 +37,14 @@
        <!-- Buttons -->
         <div>
             <!-- Login Button -->
-            <button class="bg-[#1C1727] rounded-xl text-gray-200 border-2 border-transparent bg-transparent px-4 py-1" style="           
+            <button class="bg-[#1C1727] rounded-lg text-gray-200 border-2 border-transparent bg-transparent px-4 py-1" style="           
             background-image: linear-gradient(90deg, #1C1727, #1C1727),
             linear-gradient(120deg, rgba(63,167,242,1) 0%, rgba(168,49,253,1) 100%);
             background-clip: padding-box, border-box;
             background-origin: border-box;
             ">Log In</button>
             <!-- SignUp Button -->
-            <button class="bg-[#1C1727] text-gray-200 border-transparent bg-transparent rounded-xl border-2 px-4 py-1"  style="           
+            <button class="bg-[#1C1727] text-gray-200 border-transparent bg-transparent rounded-lg border-2 px-4 py-1"  style="           
             background-image: linear-gradient(90deg, #1C1727, #1C1727),
             linear-gradient(120deg, rgba(63,167,242,1) 0%, rgba(168,49,253,1) 100%);
             background-clip: padding-box, border-box;
@@ -63,8 +66,27 @@
 
         <p class="text-gray-200">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias sequi quo, ea incidunt animi qui expedita soluta? Cumque nemo dignissimos, suscipit mollitia maiores ratione molestias iste repudiandae. Aliquam, aspernatur ab.</p>
 
-        <div>
+        <div class="flex items-center gap-10 md:w-[55%]">
+            <!-- Not worked as expected -->
+            <!-- <i class="fa-solid fa-play fa-2xl text-white mt-5" style="background: -webkit-linear-gradient( #b45bfe, #6448f7);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;"></i> -->
 
+
+            <!-- Triangle -->
+            <div class="w-12 h-10 rounded-lg rotate-90 mt-5 shadow-2xl" style="background: rgb(180,91,254);
+            background: linear-gradient(0deg, rgba(180,91,254,1) 0%, rgba(100,72,247,1) 100%); -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+            clip-path: polygon(50% 0%, 0% 100%, 100% 100%);">
+            </div>
+            <!-- Let get Started -->
+            <div>
+                <h1 class="text-white text-2xl font-semibold my-3">Let's get started!</h1>
+                <p class="text-gray-200 leading-tight">
+                    Watch this quick demo video to see how to get started.
+                </p>
+            </div>
+            
         </div>
 
     </div>
