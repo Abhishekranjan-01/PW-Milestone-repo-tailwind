@@ -99,7 +99,7 @@
 
     <!-- World Map Section -->
 
-    <section class="">
+    <section class="bg-[#160E2A]">
         <!-- This is Subsection of Section Which Holds The Container (With Required Padding) -->
 
         <div class="bg-[#160E2A] w-full mx-auto py-10 ">
@@ -114,7 +114,7 @@
 
         </div>
         <!-- World Map -->
-        <div class="bg-[url('./assets/map.png')] bg-no-repeat max-md:bg-contain md:bg-contain min-[1243px]:bg-cover  h-screen md:relative">
+        <div class="bg-[url('./assets/map.png')] bg-no-repeat max-md:bg-contain md:bg-contain  xl:bg-contain min-[1380px]:bg-cover h-64 md:h-screen md:relative">
             
             <!-- Img Placed On Canada On md-->
                 <img src="./assets/person.png" alt="Person" class="relative left-[153px] top-9 max-md:hidden">
@@ -132,14 +132,27 @@
             <!-- Img Placed On Central Asia on Md-->
 
             <img src="./assets/person.png" alt="Person" class="absolute right-[395px] top-[168px] max-md:hidden">
-
-            <img src="./assets/person.png" alt="Person" class="absolute right-[438px] bottom-32 max-md:hidden">
-
+            <!-- Img Placed On Middle East Asia -->
+            <img src="./assets/person.png" alt="Person" class="absolute right-[438px] bottom-40 max-md:hidden">
+              <!-- max-md:w-[20%] -->
         </div>
-        <!-- max-md:w-[20%] -->
+    
+        <!-- Button Container For Centering -->
+        <div class="bg-[#160E2A] w-full mx-auto py-10 flex justify-center">
+            <!-- Button -->
+            <button class="bg-[#1C1727] text-gray-200 border-transparent bg-transparent rounded-lg border-2 px-4 py-1 mx-auto"  style="           
+            background-image: linear-gradient(90deg, #1C1727, #1C1727),
+            linear-gradient(120deg, rgba(63,167,242,1) 0%, rgba(168,49,253,1) 100%);
+            background-clip: padding-box, border-box;
+            background-origin: border-box;
+            ">View All Collections</button>
+        </div>
     </section>
     
 
+
+
+    <!-- min-[1243px]:bg-contain -->
 
 </body>
 </html>
